@@ -1,0 +1,31 @@
+.navList ul li a{
+    font-size: large;
+    position: relative;
+}
+.navList ul li a::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 0;
+    border-radius: 30px;
+    background-color: #32A0C2;
+    bottom: 0;
+    left: 0;
+}
+.navList ul li a:hover::after{
+    width: 100%;
+    transition: 1s;
+}
+
+@media screen and (max-width: 992px) {
+    .navList ul li a:hover::after{
+        width: 8%;
+        transition: 1s;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navList ul li a:hover::after{
+        width: 10%;
+        transition: 1s;
+    }
+}

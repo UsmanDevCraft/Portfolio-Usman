@@ -1,0 +1,53 @@
+.work{
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.font_size{
+    font-size: 5vw;
+    font-weight: 700;
+    color: #ffffff;
+}
+p{
+    color: #ffffff;
+}
+.anchor_live{
+    text-decoration: none;
+    color: #ffffff;
+}
+.bg_card_color{
+    background-color: #0C0C0C;
+    color: #ffffff;
+}
+
+.beforeTag{
+    position: relative;
+}
+
+.beforeTag::before{
+    content: '';
+    width: 10vw;
+    height: 6px;
+    background-color: #32A0C2;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border-radius: 70px;
+}
+
+.ProjectsTag{
+    position: relative;
+}
+
+.ProjectsTag::before{
+    content: '';
+    width: 5vw;
+    height: 6px;
+    background-color: #32A0C2;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border-radius: 70px;
+}

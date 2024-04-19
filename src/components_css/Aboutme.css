@@ -1,0 +1,28 @@
+.aboutme{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.div01{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+.div02{
+    width: 50%;
+    height: 100%;
+}
+.myPic{
+    width: 30vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .div02 img{
+        height: 50%;
+        width: 90%;
+    }
+}
