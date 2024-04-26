@@ -16,7 +16,7 @@ const Work = () => {
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Cloudbook</h5>
                         <p className="card-text">This is an online notes saving web app which is used to store the data of a specific user only. Using the Login and Signup functionality, one can easily create an account and login to create, read, update, and delete their notes. This is made from React + Vite, MongoDB, Express, and Node, and Bootstrap.</p>
-                        <a href="https://cloudbook-kappa.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                        <a href="https://cloud-book-mern-web-app.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
                         <a href="https://github.com/UsmanDevCraft/Cloudbook" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
                     </div>
                     <div className="card col-md-8">
