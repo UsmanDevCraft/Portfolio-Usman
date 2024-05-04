@@ -59,6 +59,22 @@ const Work = () => {
             </div>
 
 
+            {/* ------------------ PROJECT#Newshub ------------------ */}
+            <div className="card my-5 bg_card_color">
+                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                    <div className="card-body col-md-4">
+                        <h5 className="card-title ProjectsTag">NewsHub</h5>
+                        <p className="card-text">A news website to deliver news up to date. This is developed using ReactJs, Bootstrap, News API and hosted on vercel.</p>
+                        <a href="https://news-hub-news-delivering-website.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                       <a href="https://github.com/UsmanDevCraft/NewsHub" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                    </div>
+                    <div className="card col-md-8">
+                        <img src="/NewsHub_ss_01.png" className="card-img-top" alt="/NewsHub_ss_01.png" />
+                    </div>
+                </div>
+            </div>
+
+
             {/* ------------------ PROJECT#04 ------------------ */}
             <div className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
