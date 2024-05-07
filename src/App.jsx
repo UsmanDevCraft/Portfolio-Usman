@@ -5,6 +5,7 @@ import Work from './components/Work'
 import Skills from './components/Skills'
 import Aboutme from './components/Aboutme'
 import Hireme from './components/Hireme'
+import Blog from './components/Blog'
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
       </section>
       <section id='aboutme'>
         <Aboutme />
+      </section>
+      <section id='blog'>
+        <Blog />
       </section>
       <section id='hireme'>
         <Hireme />

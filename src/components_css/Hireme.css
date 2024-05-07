@@ -17,3 +17,10 @@
     color: #ffffff;
     transition: 0.5s;
 }
+.cvButton{
+    background-color: #0DCAF0;
+    color: #ffffff;
+}
+/* .cvButton:hover{
+    background-color: #0DCAF0;
+} */

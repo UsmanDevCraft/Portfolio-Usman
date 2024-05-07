@@ -1,0 +1,7 @@
+.blog{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

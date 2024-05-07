@@ -2,6 +2,18 @@ import React from 'react'
 import '../components_css/Navbar.css'
 
 const Navbar = () => {
+
+  const downloadCV = () => {
+    // Replace 'cv.pdf' with the actual path to your CV file
+    const cvUrl = '/MERNDev_CV.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'UsmanDevCV'; // You can change the downloaded file name here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   return (
     <nav className="navbar navbar-expand-lg .bg-dark.bg-gradient fixed-top">
         <div className="container-fluid container">
@@ -23,8 +35,12 @@ const Navbar = () => {
                 <li className="nav-item">
                 <a className="nav-link active text-white me-3" aria-current="page" href="#aboutme">About</a>
                 </li>
+                <li className="nav-item">
+                <a className="nav-link active text-white me-3" aria-current="page" href="#blog">Blog</a>
+                </li>
             </ul>
-            <a className="nav-link active text-white" aria-current="page" href="#hireme"><button className='btn btn-outline-info'>Hire me</button></a>
+            <button className='btn btn-outline-info me-4 mt-1' onClick={downloadCV}>Download CV</button>
+            <a className="nav-link active text-white mt-1" aria-current="page" href="#hireme"><button className='btn btn-outline-info'>Hire me</button></a>
             </div>
         </div>
     </nav>

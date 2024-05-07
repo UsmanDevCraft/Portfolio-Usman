@@ -51,3 +51,13 @@ p{
     left: 10px;
     border-radius: 70px;
 }
+
+
+@media screen and (max-width: 500px) {
+    .beforeTag::before{
+        width: 13vw;
+    }
+    .ProjectsTag::before{
+        width: 8vw;
+    }
+}
