@@ -10,6 +10,25 @@ const Work = () => {
             <h1 className='font_size beforeTag'>My work</h1>
             <p>Checkout a few of my works!</p>
 
+
+            {/* ------------------ PROJECT#E-Commerce ------------------ */}
+            <div className="card my-5 bg_card_color">
+                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                    <div className="card-body col-md-4">
+                        <h5 className="card-title ProjectsTag">E-Commerce WebApp</h5>
+                        <p className="card-text">This is an e-commerce store webapp which allows users to search for different products, save the product to thier cart, and provides login and signup functionality. This webapp is made from Reactjs, Bootstrap, Pexels API, MERN for login and signup and localstorage for storing cart.</p>
+                        <a href="https://e-commerce-store-web-app.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                        <a href="https://github.com/UsmanDevCraft/e-commerce" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                    </div>
+                    <div className="card col-md-8">
+                        <img src="/ecommerce_img_001.png" className="card-img-top" alt="/ecommerce_img_001.png" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
             {/* ------------------ PROJECT#01 ------------------ */}
             <div className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>

@@ -35,12 +35,12 @@ const Skills = () => {
   }, []);
 
   return (
-      <div key={reloadKey} className='skills' ref={ref}>
+      <div key={reloadKey} className='skills'>
           <div className="container skills-child">
               <h1 className='font_size beforeTag'>My skills</h1>
               <p>Here are some technologies I've used!</p>
               <code>Drag the skills for amazing dragging effect using framer motion.</code>
-              <div className=" mt-5 container d-flex justify-content-center flex-wrap gap-3">
+              <div className=" mt-5 container d-flex justify-content-center flex-wrap gap-3" ref={ref}>
                   <motion.button drag dragConstraints={ref} type="button" className="btn gap-2 btn101 font_text btn-dark mt-1 d-flex justify-content-center align-items-center"><FaHtml5 />HTML</motion.button>
                   <motion.button drag dragConstraints={ref} type="button" className="btn gap-2 btn101 font_text btn-dark mt-1 d-flex justify-content-center align-items-center"><FaCss3 />CSS</motion.button>
                   <motion.button drag dragConstraints={ref} type="button" className="btn gap-2 btn101 font_text btn-dark mt-1 d-flex justify-content-center align-items-center"><IoLogoJavascript />JavaScript</motion.button>
