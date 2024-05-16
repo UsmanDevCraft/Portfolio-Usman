@@ -54,10 +54,10 @@ p{
 
 .imgCard{
     width: 50% !important;
-    height: 50vh !important
+    height: 50vh !important;
 }
 .imgCard img{
-    height: 100% !important
+    height: 100% !important;
 }
 
 .accordionBg{
@@ -77,6 +77,7 @@ p{
 
 @media screen and (max-width: 768px) {
     .imgCard{
-        width: 100% !important
+        width: 100% !important;
+        height: 70% !important
     }
 }

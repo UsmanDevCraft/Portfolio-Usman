@@ -7,8 +7,8 @@ const Blog = () => {
   return (
     <div className="blog">
         <div className='container'>
-        <h1 className='font_size beforeTag'>Blog</h1>
-        <p>Checkout a few of my works!</p>
+        <h1 className='font_size beforeTag'>My Blogs</h1>
+        <p>Checkout a few of my blogs!</p>
 
 
         {/* ------------------ BLOG#01 ------------------ */}

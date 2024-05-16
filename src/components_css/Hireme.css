@@ -24,3 +24,18 @@
 /* .cvButton:hover{
     background-color: #0DCAF0;
 } */
+
+.formWidth{
+    width: 50%;
+}
+
+.inputBg{
+    background-color: #0C0C0C !important;
+    color: #ffffff !important;
+}
+
+@media screen and (max-width: 768px) {
+    .formWidth{
+        width: 100%;
+    }
+}
