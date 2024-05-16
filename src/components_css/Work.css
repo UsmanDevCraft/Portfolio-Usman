@@ -60,6 +60,10 @@ p{
     height: 100% !important
 }
 
+.accordionBg{
+    background-color: #020202;
+}
+
 
 @media screen and (max-width: 500px) {
     .beforeTag::before{

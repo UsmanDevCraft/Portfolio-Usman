@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../components_css/Work.css'
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 
 const Work = () => {
+
+
+    const [ accordionHeading, setAccHead] = useState('Show More Projects');
+    const [ textColor, setTextColor] = useState('text-white');
+    const onClick = () => {
+        if(accordionHeading === 'Show More Projects'){
+            setAccHead('Show Less');
+            setTextColor('text-dark');
+        } else {
+            setAccHead('Show More Projects');
+            setTextColor('text-white');
+        }
+    };
+
   return (
     <div className='work'>
         <div className='container work-child'>
@@ -110,65 +124,83 @@ const Work = () => {
             </div>
 
 
-            {/* ------------------ PROJECT#05 ------------------ */}
-            <div className="card my-5 bg_card_color">
-                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4">
-                        <h5 className="card-title ProjectsTag">Responsive-SPOTIFY-Clone</h5>
-                        <p className="card-text">This is a responsive music app with great animations coded with pure HTML, CSS and Vanilla JS.</p>
-                        <a href="https://usmandevcraft.github.io/Responsive-SPOTIFY-Clone/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
-                       <a href="https://github.com/UsmanDevCraft/Responsive-SPOTIFY-Clone" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
-                    </div>
-                    <div className="card col-md-8 imgCard">
-                        <img src="/spotify_clone_ss.png" className="card-img-top" alt="/spotify_clone_ss.png" />
-                    </div>
-                </div>
-            </div>
 
 
-            {/* ------------------ PROJECT#06 ------------------ */}
-            <div className="card my-5 bg_card_color">
-                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4 order-md-2">
-                        <h5 className="card-title ProjectsTag">Responsive-BUBBLE-GAME</h5>
-                        <p className="card-text">This is a responsive bubble game in which you hit bubbles with same number as that of hit targtet given, each correct hit gives a score of 10 and after each hit, all numbers on screen changes with change in target. It is made with HTML, CSS and JS only.</p>
-                        <a href="https://usmandevcraft.github.io/Responsive-BUBBLE-GAME/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
-                       <a href="https://github.com/UsmanDevCraft/Responsive-BUBBLE-GAME" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
-                    </div>
-                    <div className="card col-md-8 imgCard order-md-1">
-                        <img src="/bubble_game_ss.png" className="card-img-top" alt="/bubble_game_ss.png" />
-                    </div>
-                </div>
-            </div>
+            {/* -------------- Accordion Button for Showing More Projects (7-10) -------------- */}
+            <div className="accordion accordionBg" id="accordionExample">
+                <div className="accordion-item">
+                    <h2 className="accordion-header">
+                    <button className="accordion-button collapsed accordionBg" onClick={onClick} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p className={`${textColor} fs-5`}>{ accordionHeading }</p>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" className="accordion-collapse collapse accordionBg" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
 
 
-            {/* ------------------ PROJECT#07 ------------------ */}
-            <div className="card my-5 bg_card_color">
-                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4">
-                        <h5 className="card-title ProjectsTag">DocsApp</h5>
-                        <p className="card-text">This is a modern web design for a mini document app with draggable notes cards. It is built with help of React, Tailwind and Framer motion.</p>
-                        <a href="https://docs-app-sigma.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
-                       <a href="https://github.com/UsmanDevCraft/DocsApp" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
-                    </div>
-                    <div className="card col-md-8 imgCard">
-                        <img src="/docs_app_001.png" className="card-img-top" alt="/docs_app_001.png" />
-                    </div>
-                </div>
-            </div>
+                        {/* ------------------ PROJECT#05 ------------------ */}
+                        <div className="card my-5 mt-3 bg_card_color">
+                            <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                                <div className="card-body col-md-4">
+                                    <h5 className="card-title ProjectsTag">Responsive-SPOTIFY-Clone</h5>
+                                    <p className="card-text">This is a responsive music app with great animations coded with pure HTML, CSS and Vanilla JS.</p>
+                                    <a href="https://usmandevcraft.github.io/Responsive-SPOTIFY-Clone/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                                <a href="https://github.com/UsmanDevCraft/Responsive-SPOTIFY-Clone" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                                </div>
+                                <div className="card col-md-8 imgCard">
+                                    <img src="/spotify_clone_ss.png" className="card-img-top" alt="/spotify_clone_ss.png" />
+                                </div>
+                            </div>
+                        </div>
 
 
-            {/* ------------------ PROJECT#08 ------------------ */}
-            <div className="card bg_card_color">
-                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4 order-md-2">
-                        <h5 className="card-title ProjectsTag">python-backend-main</h5>
-                        <p className="card-text">A Machine Learning project with react front end for overlapped speech seperation.</p>
-                        <a href="python-backend-main.vercel.app" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
-                       <a href="https://github.com/UsmanDevCraft/python-backend-main" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                        {/* ------------------ PROJECT#06 ------------------ */}
+                        <div className="card my-5 bg_card_color">
+                            <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                                <div className="card-body col-md-4 order-md-2">
+                                    <h5 className="card-title ProjectsTag">Responsive-BUBBLE-GAME</h5>
+                                    <p className="card-text">This is a responsive bubble game in which you hit bubbles with same number as that of hit targtet given, each correct hit gives a score of 10 and after each hit, all numbers on screen changes with change in target. It is made with HTML, CSS and JS only.</p>
+                                    <a href="https://usmandevcraft.github.io/Responsive-BUBBLE-GAME/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                                <a href="https://github.com/UsmanDevCraft/Responsive-BUBBLE-GAME" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                                </div>
+                                <div className="card col-md-8 imgCard order-md-1">
+                                    <img src="/bubble_game_ss.png" className="card-img-top" alt="/bubble_game_ss.png" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* ------------------ PROJECT#07 ------------------ */}
+                        <div className="card my-5 bg_card_color">
+                            <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                                <div className="card-body col-md-4">
+                                    <h5 className="card-title ProjectsTag">DocsApp</h5>
+                                    <p className="card-text">This is a modern web design for a mini document app with draggable notes cards. It is built with help of React, Tailwind and Framer motion.</p>
+                                    <a href="https://docs-app-sigma.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                                <a href="https://github.com/UsmanDevCraft/DocsApp" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                                </div>
+                                <div className="card col-md-8 imgCard">
+                                    <img src="/docs_app_001.png" className="card-img-top" alt="/docs_app_001.png" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* ------------------ PROJECT#08 ------------------ */}
+                        <div className="card bg_card_color">
+                            <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                                <div className="card-body col-md-4 order-md-2">
+                                    <h5 className="card-title ProjectsTag">python-backend-main</h5>
+                                    <p className="card-text">A Machine Learning project with react front end for overlapped speech seperation.</p>
+                                    <a href="python-backend-main.vercel.app" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                                <a href="https://github.com/UsmanDevCraft/python-backend-main" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                                </div>
+                                <div className="card col-md-8 imgCard order-md-1">
+                                    <img src="/FYP_Frontend_pic.png" className="card-img-top" alt="/FYP_Frontend_pic.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="card col-md-8 imgCard order-md-1">
-                        <img src="/FYP_Frontend_pic.png" className="card-img-top" alt="/FYP_Frontend_pic.png" />
                     </div>
                 </div>
             </div>
