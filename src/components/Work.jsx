@@ -28,18 +28,34 @@ const Work = () => {
             {/* ------------------ PROJECT#E-Commerce ------------------ */}
             <div className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4">
+                    <div className="card-body col-md-4 order-md-2">
                         <h5 className="card-title ProjectsTag">E-Commerce WebApp</h5>
                         <p className="card-text">This is an e-commerce store webapp which allows users to search for different products, save the product to thier cart, and provides login and signup functionality. This webapp is made from Reactjs, Bootstrap, Pexels API, MERN for login and signup and localstorage for storing cart.</p>
                         <a href="https://e-commerce-store-web-app.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
                         <a href="https://github.com/UsmanDevCraft/e-commerce" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
                     </div>
-                    <div className="card col-md-8 imgCard">
+                    <div className="card col-md-8 imgCard order-md-1">
                         <img src="/ecommerce_img_001.png" className="card-img-top" alt="/ecommerce_img_001.png" />
                     </div>
                 </div>
             </div>
 
+
+
+            {/* ------------------ PROJECT#Pexels Clone ------------------ */}
+            <div className="card my-5 bg_card_color">
+                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                    <div className="card-body col-md-4">
+                        <h5 className="card-title ProjectsTag">Pexels-Clone</h5>
+                        <p className="card-text">This is a clone of image gallery PEXELS which allows users to search all category images and videos and download them too for free. This app is made from HTML, CSS, JavaScript, ReactJS, BootStrap, Pexels API and hosted on vercel.</p>
+                        <a href="https://pexels-clone-web-app.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                        <a href="https://github.com/UsmanDevCraft/Pexels-Clone" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                    </div>
+                    <div className="card col-md-8 imgCard">
+                        <img src="/pexels_clone_img_001.png" className="card-img-top" alt="/ecommerce_img_001.png" />
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -108,22 +124,6 @@ const Work = () => {
             </div>
 
 
-            {/* ------------------ PROJECT#04 ------------------ */}
-            <div className="card my-5 bg_card_color">
-                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
-                    <div className="card-body col-md-4 order-md-2">
-                        <h5 className="card-title ProjectsTag">SNAKE-GAME</h5>
-                        <p className="card-text">This is a responsive snake game provided with different speed options to play with. It is coded with pure HTML, CSS and vanilla JS.</p>
-                        <a href="https://usmandevcraft.github.io/SNAKE-GAME/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
-                       <a href="https://github.com/UsmanDevCraft/SNAKE-GAME" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
-                    </div>
-                    <div className="card col-md-8 imgCard order-md-1">
-                        <img src="/Snake_Game_001.png" className="card-img-top" alt="/Snake_Game_001.png" />
-                    </div>
-                </div>
-            </div>
-
-
 
 
             {/* -------------- Accordion Button for Showing More Projects (7-10) -------------- */}
@@ -136,6 +136,23 @@ const Work = () => {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse accordionBg" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
+
+
+
+                        {/* ------------------ PROJECT#04 ------------------ */}
+                        <div className="card my-5 bg_card_color">
+                            <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                                <div className="card-body col-md-4 order-md-2">
+                                    <h5 className="card-title ProjectsTag">SNAKE-GAME</h5>
+                                    <p className="card-text">This is a responsive snake game provided with different speed options to play with. It is coded with pure HTML, CSS and vanilla JS.</p>
+                                    <a href="https://usmandevcraft.github.io/SNAKE-GAME/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                                <a href="https://github.com/UsmanDevCraft/SNAKE-GAME" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                                </div>
+                                <div className="card col-md-8 imgCard order-md-1">
+                                    <img src="/Snake_Game_001.png" className="card-img-top" alt="/Snake_Game_001.png" />
+                                </div>
+                            </div>
+                        </div>
 
 
                         {/* ------------------ PROJECT#05 ------------------ */}
