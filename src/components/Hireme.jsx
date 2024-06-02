@@ -14,7 +14,7 @@ const Hireme = () => {
 
     const downloadCV = () => {
         // Replace 'cv.pdf' with the actual path to your CV file
-        const cvUrl = '/MERNDev_CV.pdf';
+        const cvUrl = '/Mani_Dev_CV.pdf';
         const link = document.createElement('a');
         link.href = cvUrl;
         link.download = 'UsmanDevCV'; // You can change the downloaded file name here
