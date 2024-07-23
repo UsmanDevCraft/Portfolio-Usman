@@ -14,11 +14,14 @@ import { FaGithub } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { TbBrandThreejs } from "react-icons/tb";
 import { motion } from "framer-motion"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Skills = () => {
   const ref = useRef(null);
   const [reloadKey, setReloadKey] = useState(0);
+  AOS.init();
 
   useEffect(() => {
       const handleResize = () => {
@@ -37,8 +40,10 @@ const Skills = () => {
   return (
       <div key={reloadKey} className='skills'>
           <div className="container skills-child">
-              <h1 className='font_size beforeTag'>My skills</h1>
-              <p>Here are some technologies I've used!</p>
+          <div data-aos="fade-right">
+            <h1 className='font_size beforeTag'>My skills</h1>
+            <p>Here are some technologies I've used!</p>
+            </div>
               <code>Drag the skills for amazing dragging effect using framer motion.</code>
               <div className=" mt-5 container d-flex justify-content-center flex-wrap gap-3" ref={ref}>
                   <motion.button drag dragConstraints={ref} type="button" className="btn gap-2 btn101 font_text btn-dark mt-1 d-flex justify-content-center align-items-center"><FaHtml5 />HTML</motion.button>

@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import '../components_css/Work.css'
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Work = () => {
-
+    AOS.init();
 
     const [ accordionHeading, setAccHead] = useState('Show More Projects');
     const [ textColor, setTextColor] = useState('text-white');
@@ -21,12 +23,14 @@ const Work = () => {
   return (
     <div className='work'>
         <div className='container work-child'>
-            <h1 className='font_size beforeTag'>My work</h1>
-            <p>Checkout a few of my works!</p>
+            <div data-aos="fade-right">
+                <h1 className='font_size beforeTag'>My work</h1>
+                <p>Checkout a few of my works!</p>
+            </div>
 
 
             {/* ------------------ PROJECT#E-Commerce ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4 order-md-2">
                         <h5 className="card-title ProjectsTag">E-Commerce WebApp</h5>
@@ -43,7 +47,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#Pexels Clone ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-left" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Pexels-Clone</h5>
@@ -60,7 +64,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#01 ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4 order-md-2">
                         <h5 className="card-title ProjectsTag">Cloudbook</h5>
@@ -77,7 +81,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#02 ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-left" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Modern-Website-Landing-Page</h5>
@@ -93,7 +97,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#03 ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4 order-md-2">
                         <h5 className="card-title ProjectsTag">textEditor</h5>
@@ -109,7 +113,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#Newshub ------------------ */}
-            <div className="card my-5 bg_card_color">
+            <div data-aos="fade-left" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">NewsHub</h5>
@@ -127,7 +131,7 @@ const Work = () => {
 
 
             {/* -------------- Accordion Button for Showing More Projects (7-10) -------------- */}
-            <div className="accordion accordionBg" id="accordionExample">
+            <div data-aos="fade-down" className="accordion accordionBg" id="accordionExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header">
                     <button className="accordion-button collapsed accordionBg" onClick={onClick} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">

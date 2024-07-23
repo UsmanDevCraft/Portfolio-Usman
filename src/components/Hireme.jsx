@@ -8,9 +8,12 @@ import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFilePdf } from "react-icons/fa6";
 import { Resend } from 'resend';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Hireme = () => {
+    AOS.init();
 
     const downloadCV = () => {
         // Replace 'cv.pdf' with the actual path to your CV file
@@ -60,9 +63,11 @@ const Hireme = () => {
     <>
     <div className='hireme'>
         <div className="container">
-            <h1 className='font_size beforeTag'>Hire me</h1>
-            <div>
+            <div data-aos="fade-right">
+                <h1 className='font_size beforeTag'>Hire me</h1>
                 <p>I would like to make your ideas come to live. Feel free to contact me at anytime</p>
+            </div>
+            <div>
 
 
                 <div className="container d-flex justify-content-center flex-wrap">

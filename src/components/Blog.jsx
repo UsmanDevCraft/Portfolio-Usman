@@ -1,18 +1,24 @@
 import React from 'react'
 import '../components_css/Blog.css'
 import { FaEye } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Blog = () => {
+    AOS.init();
+
   return (
     <div className="blog">
         <div className='container'>
-        <h1 className='font_size beforeTag'>My Blogs</h1>
-        <p>Checkout a few of my blogs!</p>
+        <div data-aos="fade-right">
+            <h1 className='font_size beforeTag'>My Blogs</h1>
+            <p>Checkout a few of my blogs!</p>
+        </div>
 
 
         {/* ------------------ BLOG#01 ------------------ */}
-        <div className="card my-5 bg_card_color">
+        <div data-aos="fade-up" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Blog-MERN-vercel-host</h5>

@@ -1,12 +1,18 @@
 import React from 'react'
 import '../components_css/Aboutme.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Aboutme = () => {
+    AOS.init();
   return (
     <div className='aboutme'>
         <div className="container">
-            <h1 className='font_size beforeTag'>About me</h1>
-            <div className='mt-4 d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-center'>
+            <div data-aos="fade-right">
+                <h1 className='font_size beforeTag'>About me</h1>
+                <p>A quick intro about me.</p>
+            </div>
+            <div data-aos="fade-up" className='mt-4 d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-center'>
                 <div className='div02 col-md-8 d-flex justify-content-center align-items-center pb-5'>
                     <img src="/1706953445419.JPG" className='myPic' alt="/1706953445419.JPG" />
                 </div>
