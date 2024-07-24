@@ -47,7 +47,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#Pexels Clone ------------------ */}
-            <div data-aos="fade-left" className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Pexels-Clone</h5>
@@ -81,7 +81,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#02 ------------------ */}
-            <div data-aos="fade-left" className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">Modern-Website-Landing-Page</h5>
@@ -113,7 +113,7 @@ const Work = () => {
 
 
             {/* ------------------ PROJECT#Newshub ------------------ */}
-            <div data-aos="fade-left" className="card my-5 bg_card_color">
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
                     <div className="card-body col-md-4">
                         <h5 className="card-title ProjectsTag">NewsHub</h5>
