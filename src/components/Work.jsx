@@ -63,6 +63,40 @@ const Work = () => {
 
 
 
+            {/* ------------------ PROJECT#Real-time-tracker ------------------ */}
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
+                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                    <div className="card-body col-md-4 order-md-2">
+                        <h5 className="card-title ProjectsTag">Realtime Device Tracker</h5>
+                        <p className="card-text">This project is a real-time device tracking system, developed using Node.js, Express.js, Socket.IO, and Leaflet. It efficiently tracks and displays device locations in real-time on an interactive map. The system leverages WebSockets for seamless, real-time communication between the server and clients.</p>
+                        <a href="https://realtime-device-tracker-system.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                        <a href="https://github.com/UsmanDevCraft/realtime-device-tracker" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                    </div>
+                    <div className="card col-md-8 imgCard">
+                        <img src="/device-tracker_ss.png" className="card-img-top" alt="/ecommerce_img_001.png" />
+                    </div>
+                </div>
+            </div>
+
+
+
+            {/* ------------------ PROJECT#Qr-code generator ------------------ */}
+            <div data-aos="fade-right" className="card my-5 bg_card_color">
+                <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+                    <div className="card-body col-md-4">
+                        <h5 className="card-title ProjectsTag">QR Code Generator</h5>
+                        <p className="card-text">This application is a URL to QR Code converter built using HTML, Node.js, and Express.js. Users can effortlessly input any URL into a form, convert it into a QR code, and download the QR code image.</p>
+                        <a href="https://url-to-qr-code-convertor-generator-5izt2bsmr.vercel.app/" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark d-flex justify-content-center align-items-center gap-2"><FaEye />Live</button></a>
+                        <a href="https://github.com/UsmanDevCraft/QR-Generator" className='anchor_live' target="target_main"><button type="button" className="btn btn-dark mt-1 d-flex justify-content-center align-items-center gap-2"><FaGithub />Source</button></a>
+                    </div>
+                    <div className="card col-md-8 imgCard">
+                        <img src="/qr-code-gen_ss.png" className="card-img-top" alt="/ecommerce_img_001.png" />
+                    </div>
+                </div>
+            </div>
+
+
+
             {/* ------------------ PROJECT#01 ------------------ */}
             <div data-aos="fade-right" className="card my-5 bg_card_color">
                 <div className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
