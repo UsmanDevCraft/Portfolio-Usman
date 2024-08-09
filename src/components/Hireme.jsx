@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useRef } from 'react'
 import '../components_css/Hireme.css'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -7,13 +7,15 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFilePdf } from "react-icons/fa6";
-import { Resend } from 'resend';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import emailjs from '@emailjs/browser';
 
 
-const Hireme = () => {
+const Hireme =  () => {
     AOS.init();
+
+    const form = useRef();
 
     const downloadCV = () => {
         // Replace 'cv.pdf' with the actual path to your CV file
@@ -27,36 +29,21 @@ const Hireme = () => {
     };
 
 
-    const [formData, setFormData] = useState({name: "", email: "", message: ""});
-    const { name, email, message} = formData;
-
-
-
-    const onChange = (e) => {
-        setFormData({...formData, [e.target.name]:e.target.value});
-        // console.log({name, email, message});
-    };
-
-
     const onSubmit = (e) => {
         e.preventDefault();
 
-        // const resend = new Resend('re_3YS9KSVB_F6HGZQCgEKPiN9dqhC8eYgXN');
-
-        // (async function() {
-        // const { data, error } = await resend.emails.send({
-        //     from: {email},
-        //     to: 'usmanaugust28@gmail.com',
-        //     subject: `Hire Me Message from ${name}`,
-        //     text: {message}
-        // });
-    
-        // if (error) {
-        //     return console.log(error);
-        // }
-    
-        // console.log(data);
-        // })();
+        emailjs
+      .sendForm('service_uwze0rf', 'template_qb05t3c', form.current, {
+        publicKey: 'YFNLedbbeXByjbiN7',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
     };
 
   return (
@@ -72,20 +59,38 @@ const Hireme = () => {
 
                 <div className="container d-flex justify-content-center flex-wrap">
                 <div className='container formWidth'>
-                    <form onSubmit={onSubmit}>
+                    <form ref={form} onSubmit={onSubmit}>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label text-white">Name</label>
-                            <input onChange={onChange} type="text" className="form-control inputBg" id="name" name='name' aria-describedby="emailHelp" />
+                            <input type="text" className="form-control inputBg" id="name" name='user_name' aria-describedby="emailHelp" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label text-white">Email</label>
-                            <input onChange={onChange} type="email" className="form-control inputBg" id="email" name='email' aria-describedby="emailHelp" />
+                            <input type="email" className="form-control inputBg" id="email" name='user_email' aria-describedby="emailHelp" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label text-white">Message</label>
-                            <textarea onChange={onChange} type="text" className="form-control inputBg" id="message" name='message' aria-describedby="emailHelp" minLength={2} placeholder='Write your message here' style={{height: '10rem'}}></textarea>
+                            <textarea type="text" className="form-control inputBg" id="message" name='message' aria-describedby="emailHelp" minLength={2} placeholder='Write your message here' style={{height: '10rem'}}></textarea>
                         </div>
-                        <button type="submit" className="btn cvButton" disabled={!email || message.length <= 1 ? true : false} >Submit</button>
+
+                        <button type="submit" className="btn cvButton" value="Send" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+
+                        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                            <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                Email sent Successfully! 😋
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     </form>
                 </div>
 
