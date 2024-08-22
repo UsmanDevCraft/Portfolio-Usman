@@ -64,6 +64,9 @@ p{
     background-color: #020202;
 }
 
+.mainPageHeadBlue{
+    color: #5D5DFF;
+}
 
 @media screen and (max-width: 500px) {
     .beforeTag::before{
