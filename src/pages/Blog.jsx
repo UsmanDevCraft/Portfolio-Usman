@@ -45,6 +45,7 @@ const Blog = () => {
                 src="/dev-comm-img-002.png"
                 className="card-img-top"
                 alt="/dev-comm-img-002.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -82,6 +83,7 @@ const Blog = () => {
                 src="/dev-comm-img-001.png"
                 className="card-img-top"
                 alt="/dev-comm-img-001.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -117,6 +119,7 @@ const Blog = () => {
                 src="/blog_ss_01.png"
                 className="card-img-top"
                 alt="/blog_ss_01.png"
+                loading="lazy"
               />
             </div>
           </div>

@@ -20,6 +20,7 @@ const Aboutme = () => {
               src="/1706953445419.JPG"
               className="myPic"
               alt="/1706953445419.JPG"
+              loading="lazy"
             />
           </div>
           <div className="div01 col-md-4">

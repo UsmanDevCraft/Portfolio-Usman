@@ -28,7 +28,7 @@ const Home = () => {
         data-aos="fade-left"
         className="container d-flex align-items-center justify-content-center div2"
       >
-        <img src="/GIF.gif" alt="/GIF.gif" className="GIF" />
+        <img src="/GIF.gif" alt="/GIF.gif" className="GIF" loading="lazy" />
       </div>
     </div>
   );

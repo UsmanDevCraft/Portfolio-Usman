@@ -78,6 +78,7 @@ const Work = () => {
                 src="/quick_doodle.png"
                 className="card-img-top"
                 alt="/quick_doodle.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -132,6 +133,7 @@ const Work = () => {
                 src="/glb_viewer.png"
                 className="card-img-top"
                 alt="/glb_viewer.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -185,6 +187,7 @@ const Work = () => {
                 src="/testimonials_page.png"
                 className="card-img-top"
                 alt="/testimonials_page.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -239,6 +242,7 @@ const Work = () => {
                 src="/grok_star_effect.png"
                 className="card-img-top"
                 alt="/grok_star_effect.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -317,6 +321,7 @@ const Work = () => {
                         src="/ecommerce_img_001.png"
                         className="card-img-top"
                         alt="/ecommerce_img_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -371,6 +376,7 @@ const Work = () => {
                         src="/pexels_clone_img_001.png"
                         className="card-img-top"
                         alt="/ecommerce_img_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -426,6 +432,7 @@ const Work = () => {
                         src="/device-tracker_ss.png"
                         className="card-img-top"
                         alt="/ecommerce_img_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -479,6 +486,7 @@ const Work = () => {
                         src="/qr-code-gen_ss.png"
                         className="card-img-top"
                         alt="/ecommerce_img_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -532,6 +540,7 @@ const Work = () => {
                         src="/cloudbook_ss_3.png"
                         className="card-img-top"
                         alt="/cloudbook_ss_3.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -584,6 +593,7 @@ const Work = () => {
                         src="/Modern_Web_Landing_Page_001.png"
                         className="card-img-top"
                         alt="/Modern_Web_Landing_Page_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -635,6 +645,7 @@ const Work = () => {
                         src="/TextEditor_001.png"
                         className="card-img-top"
                         alt="/TextEditor_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -687,6 +698,7 @@ const Work = () => {
                         src="/NewsHub_ss_01.png"
                         className="card-img-top"
                         alt="/NewsHub_ss_01.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -739,6 +751,7 @@ const Work = () => {
                         src="/Snake_Game_001.png"
                         className="card-img-top"
                         alt="/Snake_Game_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -790,6 +803,7 @@ const Work = () => {
                         src="/spotify_clone_ss.png"
                         className="card-img-top"
                         alt="/spotify_clone_ss.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -844,6 +858,7 @@ const Work = () => {
                         src="/bubble_game_ss.png"
                         className="card-img-top"
                         alt="/bubble_game_ss.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -896,6 +911,7 @@ const Work = () => {
                         src="/docs_app_001.png"
                         className="card-img-top"
                         alt="/docs_app_001.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -947,6 +963,7 @@ const Work = () => {
                         src="/FYP_Frontend_pic.png"
                         className="card-img-top"
                         alt="/FYP_Frontend_pic.png"
+                        loading="lazy"
                       />
                     </div>
                   </div>
