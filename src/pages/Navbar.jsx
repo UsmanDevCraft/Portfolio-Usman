@@ -83,6 +83,16 @@ const Navbar = () => {
                 Blog
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link active text-white me-3"
+                aria-current="page"
+                href="https://dev.to/usman_awan"
+                target="_blank"
+              >
+                Dev Community
+              </a>
+            </li>
           </ul>
           <button
             className="btn btn-outline-info me-4 mt-1"
