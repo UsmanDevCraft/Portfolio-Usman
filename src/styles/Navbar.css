@@ -1,8 +1,9 @@
-.navList ul li a{
+.navList ul li a {
     font-size: large;
     position: relative;
 }
-.navList ul li a::after{
+
+.navList ul li a::after {
     position: absolute;
     content: '';
     height: 4px;
@@ -12,19 +13,34 @@
     bottom: 0;
     left: 0;
 }
-.navList ul li a:hover::after{
+
+.navList ul li a:hover::after {
     width: 100%;
     transition: 1s;
 }
 
+.glass-nav {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-nav .nav-link {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 992px) {
-    .navList ul li a:hover::after{
+    .navList ul li a:hover::after {
         width: 8%;
         transition: 1s;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .navList ul li a:hover::after{
+    .navList ul li a:hover::after {
         width: 10%;
         transition: 1s;
     }

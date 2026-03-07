@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg .bg-dark.bg-gradient fixed-top">
+    <nav className="navbar navbar-expand-lg .bg-dark.bg-gradient fixed-top glass-nav">
       <div className="container-fluid container">
         <a
           className="navbar-brand text-white"
