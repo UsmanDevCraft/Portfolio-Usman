@@ -23,9 +23,6 @@ const Home = () => {
             </button>
           </a>
         </div>
-        {/* <h1 className='font_size lh-1'>Building Seamless Web Experiences
-        <br/>
-        </h1> */}
       </div>
       <div
         data-aos="fade-left"

@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Work from "./components/Work";
-import Skills from "./components/Skills";
-import Aboutme from "./components/Aboutme";
-import Hireme from "./components/Hireme";
-import Blog from "./components/Blog";
+import Navbar from "./pages/Navbar";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
+import Skills from "./pages/Skills";
+import Aboutme from "./pages/Aboutme";
+import Hireme from "./pages/Hireme";
+import Blog from "./pages/Blog";
 
 const App = () => {
   return (
