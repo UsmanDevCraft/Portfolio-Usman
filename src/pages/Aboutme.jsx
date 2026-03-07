@@ -24,23 +24,39 @@ const Aboutme = () => {
           </div>
           <div className="div01 col-md-4">
             <p>
-              Hello! My name is Usman, and I am a frontend developer, mern stack
-              developer and web designer.
-              <br />
-              <br /> I took the initiative to teach myself coding so that I
-              could acquire the knowledge and skills necessary to transform my
-              ideas into reality.
-              <br />
-              <br />
-              Throughout this journey, I have gained expertise in designing and
-              developing visually appealing and functional websites. I&apos;m
-              dedicated to crafting websites that not only look good but also
-              work seamlessly to provide the best user experience.
+              I am a passionate and results-driven Web Developer with hands-on
+              experience in building dynamic, responsive, and scalable web
+              applications. With a strong command over both front-end and
+              back-end technologies, I deliver complete, production-ready
+              solutions that balance performance, usability, and clean
+              architecture.
               <br />
               <br />
-              Additionally, I have completed my bachelor&apos;s degree in
-              Electrical Engineering from National University of Science and
-              Technology, NUST Islamabad.
+              On the front end, I specialize in JavaScript and TypeScript,
+              leveraging React.js and Next.js to create modern, high-performance
+              user interfaces. I focus on crafting intuitive, visually engaging,
+              and accessible experiences that enhance user interaction and
+              satisfaction. My core foundations in HTML, CSS, and modern styling
+              practices allow me to build pixel-perfect, responsive designs.
+              <br />
+              <br />
+              On the back end, I work with Node.js, Express.js, and MongoDB to
+              develop robust APIs and scalable systems. I also have experience
+              implementing real-time features using Socket.io, enabling
+              seamless, interactive application experiences.
+              <br />
+              <br />
+              I am proficient in state management using Redux and Zustand, and I
+              utilize TanStack Query for efficient data fetching, caching, and
+              synchronization. For styling and UI consistency, I work with
+              Tailwind CSS and Bootstrap, ensuring clean, maintainable, and
+              performant designs. I also use Vercel for streamlined deployment
+              and hosting workflows.
+              <br />
+              <br />I am a strong problem solver who enjoys tackling complex
+              challenges with practical and efficient solutions. I continuously
+              explore and adopt new technologies to stay up to date with the
+              evolving web ecosystem.
             </p>
           </div>
         </div>
