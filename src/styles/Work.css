@@ -1,47 +1,74 @@
-.work{
+.work {
     width: 100%;
     height: 100%;
     background-color: #020202;
     padding-top: 100px;
     padding-bottom: 50px;
 }
-.font_size{
+
+.font_size {
     font-size: 5vw;
     font-weight: 700;
     color: #ffffff;
 }
-p{
+
+p {
     color: #ffffff;
 }
-.anchor_live{
+
+.anchor_live {
     text-decoration: none;
     color: #ffffff;
 }
-.bg_card_color{
+
+.bg_card_color {
     background-color: #0C0C0C;
     color: #ffffff;
 }
 
-.beforeTag{
+.beforeTag {
     position: relative;
 }
 
-.beforeTag::before{
+.beforeTag::before {
     content: '';
     width: 10vw;
     height: 6px;
-    background-color: #32A0C2;
     position: absolute;
     top: -10px;
     left: 10px;
     border-radius: 70px;
+
+    /* 1. Define the Gradient (Blue -> Orange -> Yellow -> Red) */
+    background: linear-gradient(270deg, #32A0C2, #FF8C00, #FFD700, #FF4500);
+
+    /* 2. Make the background large so we can move it */
+    background-size: 800% 800%;
+
+    /* 3. Apply the animation */
+    animation: gradientMove 10s ease infinite;
 }
 
-.ProjectsTag{
+/* 4. Define the movement logic */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.ProjectsTag {
     position: relative;
 }
 
-.ProjectsTag::before{
+.ProjectsTag::before {
     content: '';
     width: 5vw;
     height: 6px;
@@ -52,34 +79,36 @@ p{
     border-radius: 70px;
 }
 
-.imgCard{
+.imgCard {
     width: 50% !important;
     height: 50vh !important;
 }
-.imgCard img{
+
+.imgCard img {
     height: 100% !important;
 }
 
-.accordionBg{
+.accordionBg {
     background-color: #020202;
 }
 
-.mainPageHeadBlue{
+.mainPageHeadBlue {
     color: #5D5DFF;
 }
 
 @media screen and (max-width: 500px) {
-    .beforeTag::before{
+    .beforeTag::before {
         width: 13vw;
     }
-    .ProjectsTag::before{
+
+    .ProjectsTag::before {
         width: 8vw;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .imgCard{
+    .imgCard {
         width: 100% !important;
         height: 70% !important
     }
