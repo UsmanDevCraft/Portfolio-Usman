@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import Navbar from "./pages/Navbar";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Loader from "./components/Loader";
 
